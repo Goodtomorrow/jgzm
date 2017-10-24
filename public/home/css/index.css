@@ -1,0 +1,307 @@
+*{padding: 0px;margin: 0px;font-family: "微软雅黑";}
+img{border: 0px;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+
+#warp{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+#bg{
+	width: 1920px;
+	height: 820px;
+	margin: 0px auto;
+	background: url(../img/banner.png) no-repeat center center;
+	background-size: 1920px 820px;
+	overflow: hidden;
+}
+#pc-header{
+	width: 100%;
+	height: 130px;
+	position: relative;
+}
+#pc-header #header{
+	width: 1920px;
+	height: 130px;
+	background: rgba(0,0,0,0.2);
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+#pc-header #header .header{
+	width: 1200px;
+	height: 130px;
+	margin: 0px auto;
+}
+#pc-header #header .header .header_left{
+	width: 480px;
+	height: 130px;
+	float: left;
+}
+#pc-header #header .header .header_left a{
+	display: block;
+	height: 130px;
+	line-height: 130px;
+	color: #fff;
+	font-size: 34px;
+}
+#pc-header #header .header .header_right{
+	width: 550px;
+	height: 130px;
+	float: right;
+}
+#pc-header #header .header .header_right ul li{
+	float: left;
+	margin-left: 25px;
+}
+#pc-header #header .header .header_right ul li a{
+	height: 130px;
+	line-height: 130px;
+	font-size: 18px;
+	display: block;
+	float: left;
+	color: #fff;
+}
+#pc-header #header .header .header_right ul li a:hover{
+	color: red;
+}
+
+#pc-bgcolor{
+	width: 100%;
+	height: 175px;
+	position: relative;
+}
+#pc-bgcolor #bgcolor{
+	width: 1920px;
+	height: 175px;
+	background: #080808;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+#pc-bgcolor #content{
+	width: 1920px;
+	height: 155px;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+	top: -50px;
+}
+#pc-bgcolor #content .content_left{
+	margin-top: 76px;
+	width: 360px;
+	height: 2px;
+	background: #fff;
+	float: left;
+}
+#pc-bgcolor #content .content_right{
+	margin-top: 76px;
+	width: 360px;
+	height: 2px;
+	background: #fff;
+	float: left;	
+}
+#pc-bgcolor #content .content_mid{
+	width: 1200px;
+	height: 155px;
+	float: left;
+	overflow: hidden;
+}
+
+/* 本例子css */
+		.picMarquee-left{ width:1200px; height: 155px; overflow:hidden; position:relative;   }
+		.picMarquee-left .bd ul{ overflow:hidden; zoom:1; }
+		.picMarquee-left .bd ul li{ float:left;display:inline; overflow:hidden; text-align:center; margin: 0px 20px;}
+		.picMarquee-left .bd ul li .pic{ text-align:center; }
+		.picMarquee-left .bd ul li .pic img{ width:200px; height:155px; display:block;  }
+		.picMarquee-left .bd ul li .pic a:hover img{ border-color:#999;  }
+
+
+
+#pc-footer{
+	width: 100%;
+	height: 130px;
+	position: relative;
+}
+#pc-footer #footer{
+	width: 1920px;
+	height: 130px;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+	background: #1f2b3d;
+}
+#pc-footer #footer .footer{
+	width: 1200px;
+	height: 130px;
+	margin: 0px auto;
+	text-align: center;
+}
+#pc-footer #footer .footer p{
+	margin-top: 50px;
+	color: #fff;
+	font-size: 14px;
+}
+#pc-footer #footer .footer a{
+	color: #fff;
+	font-size: 14px;
+	display: inline-block;
+	margin-right: 20px;
+}
+#pc-footer #footer .footer a:hover{
+	color: red;
+}
+
+.mobeilNav{
+	position: fixed;
+	z-index: 999;
+	top: 45px;
+	display: none;
+	right: 0;
+}
+.m-nav-btn{
+	display: none;
+}
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+	html,body{
+		font-size: 62.5%;
+		
+	}
+	#pc-header{
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	#warp{
+		width: 100%;
+		height: 100%;
+		
+		position: relative;
+	}
+	#pc-header #header .header{
+		width: 100%;
+	}
+	#bg{
+		width: 100%;
+		background: url(../img/banner.png) no-repeat -920px center;
+	}
+	#pc-header{
+		height: 45px;
+	}
+	#pc-header #header{
+		margin: 0;
+		left: 0;
+		height: 45px;
+	}
+	#pc-header #header .header{
+		height: 45px;
+	}
+	.mobeilNav{
+		opacity: 1;
+		width: 40%;
+		text-align: center;
+		background:#080808 ;
+		height: auto;
+	}
+	
+	.mobeilNav ul li a{
+		display: block;
+		font-size: 1.6rem;
+		height: 20px;
+		padding: 10px 0px;
+		margin-top: 20px;
+		line-height: 20px;
+		width: 100%;
+		background: #D50000;
+		color: #fff;
+		text-align: center;
+		color: white;
+		
+	}
+	#pc-header #header .header .header_right{
+		height: 45px;
+		display: none;
+	}
+	#pc-header #header{
+		width: 100%;
+		position: relative;
+		font-size: 1.6rem;
+	}
+	#pc-header #header .header .header_left a{
+		font-size: 1.6rem;
+		line-height: 45px;
+	}
+	
+	#pc-header #header .header .header_right{
+		position: absolute;
+		right:0px ;
+		width: 100%;
+		float: none;
+	}
+	
+	#pc-header #header .header .header_left{
+		height: 45px;
+		float: none;
+		width: 80%;
+	}
+	#pc-header #header .header .header_left a{
+		font-size: 1.6rem;
+		margin-left: 5px;
+		height: 45px;
+	}
+	.m-nav-btn{
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		float: right;
+		display: block;
+		background: red;
+	}
+	
+	.m-nav-btn span{
+		display: block;
+		width: 30px;
+		height: 5px;
+		margin-top: 5px;
+		background: black;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#pc-bgcolor {
+		position: absolute;
+		top: 70%;
+		
+	}
+	
+	
+	
+	
+	
+	
+	#pc-footer{
+		width: 100%;
+	}
+	#pc-footer .footer a{
+		width: 100%;
+	}
+	#pc-footer #footer .footer p{
+		margin-top: 30px;
+	}
+}
+
+
